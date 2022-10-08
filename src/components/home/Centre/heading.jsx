@@ -7,8 +7,7 @@ const Heading  = function(){
         <>
         
 
-    
-        <h1 className={style.name_centre}>SIDDHARTH<br></br> MATHUR</h1>
+     <h1 className={style.name_centre}>SIDDHARTH<br></br> MATHUR</h1>
     <div className={style.line}></div>
 
     <div className={style.line2}></div>

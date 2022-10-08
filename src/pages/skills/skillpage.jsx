@@ -4,11 +4,18 @@ import "./skillpage.css";
 import data from "./programmingLanguageData.js"
 import data2 from "./Frameworks.js"
 import data3 from "./Extra.js";
+import { useInView } from 'react-intersection-observer';
 
-
-
+function k(v){
+    console.log()
+}
 
 const Skillpage = function () {
+  const [ref1, inView1] = useInView({
+    threshold:.2
+  });
+  
+
   return (
     <>
       <div className="container">
@@ -23,7 +30,10 @@ const Skillpage = function () {
 
         
 
-        <section className="Skill_programming_languages">
+        <section className="Skill_programming_languages" ref={ref1}>
+          {k(ref1)}
+          {inView1 ? 
+          <>
           <h2 className="Skill_pf_heading" >Programming languages</h2>
 
           <div className="tester">
@@ -39,7 +49,40 @@ const Skillpage = function () {
               })}
               <br></br>
 
-          </div>
+          </div>  
+          </>
+           : 
+           
+           <>
+           <h2 className="Skill_pf_heading" >Programming languages</h2>
+ 
+           <div className="tester">
+             
+           {data.map(function(currentElement,index){
+                   return <Skill
+                   key={data[index].id}
+                    name=  {data[index].name}
+                    percent = {0}
+                    background = {data[index].backgroundcolor}
+                   />
+                   
+               })}
+               <br></br>
+ 
+           </div>  
+           </>
+           }
+
+
+
+
+
+
+
+
+
+
+
              
          
         </section>

@@ -25,8 +25,7 @@
     /* z-index: 4; */
     position: absolute;
 
-    animation: test  1.2s ease-in-out;
-   animation-delay: 1ms;
+    
 }
 
 .homepage_img{
@@ -35,6 +34,7 @@
    top: -10%;
    animation: downtoup  1s ease-in;
    animation-delay: 1ms;
+   
    
 }
 

@@ -8,11 +8,14 @@ import teste from "/home/blitz/Desktop/Portfoilo/portfolio/src/images/Mediamodif
 import moonlight from "/home/blitz/Desktop/Portfoilo/portfolio/src/images/moonlightstars.svg"
 import skills from "/home/blitz/Desktop/Portfoilo/portfolio/src/images/skills_img.jpg"
 
+
+
 import "./homepage.css"
 import Sidepanel from "../../components/home/sidepanel/sidepanel";
 import { useState } from "react";
 import NavigationMenu from "../../components/navbar/navigation_menu";
 import Navbar from "../../components/navbar/navbar";
+import ShowDiv from "../../components/home/ShowDiv/showdiv";
 
 
 
@@ -42,9 +45,10 @@ function SetDiv(index){
     if(index===1){ //  home page
     return(
         <>
-         
+         {/* <ShowDiv/> */}
+       
         <div className="homePage" >
-         
+       
             <Heading />
             <Sidepanel fetchval={getvalue}/>
             

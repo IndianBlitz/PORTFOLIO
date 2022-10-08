@@ -25,22 +25,24 @@ const Sidepanel = function (props){
 
     return(
         <>
-        <div className={style.sidepanel}>
-        <h2 className={style.scroll_name}>Scrolldown</h2>
+      <div className={style.sidepanel}>
+            
+            <div className={style.white_line}></div>
+            <div className={style.changediv}>
+                    
+                    <h1 className={style.home_h2} onClick={changediv1}>Home</h1>
+        
+                    <h2 className={style.skill_h2} onClick={changediv2}>Skills</h2>
+                    <h2 className={style.works_h2} onClick={changediv3}>Works</h2>
+                    <h2 className={style.about_h2} onClick={changediv4}>About</h2>
+                </div>
 
       
 
         </div>  
 
           
-        <div className={style.changediv}>
-                
-            <h1 className={style.home_h2} onClick={changediv1}>Home</h1>
-
-            <h2 className={style.skill_h2} onClick={changediv2}>Skills</h2>
-            <h2 className={style.works_h2} onClick={changediv3}>Works</h2>
-            <h2 className={style.about_h2} onClick={changediv4}>About</h2>
-        </div>
+      
         
 
         </>

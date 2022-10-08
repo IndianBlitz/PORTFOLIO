@@ -16,8 +16,8 @@ section{
 }
 
 .container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+     scroll-snap-type: y mandatory; 
+     overflow-y: scroll; 
     scroll-behavior: smooth;
     height: 100vh;
     overflow-x: hidden;

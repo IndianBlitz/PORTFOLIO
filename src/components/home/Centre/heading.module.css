@@ -1,4 +1,20 @@
 
+
+
+@keyframes slidein-left {
+    0% {
+        
+        transform: translateX(-120%);
+    }
+   
+    100% {
+     
+        transform: translateX(0);
+    }
+}
+
+
+
 .name_centre{
     color: white;
     font-size: 6rem;
@@ -7,13 +23,20 @@
     
     left: 14%;
     top: 23%;
-   
-    animation: uptodown_last 1.5s ease-in;
-    animation-delay: 3ms;
-
-    
-   
+    animation: 1s slidein-left;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @keyframes uptodown {
     0% {
@@ -43,8 +66,11 @@
     border-radius: 5px;
     left: 14.5%;
     top: 60%;
-    animation: uptodown_second 1s ease-in;
-    animation-delay: 2ms;
+
+    animation: 1s slidein-left;
+
+    /* animation: uptodown_second 1s ease-in;
+    animation-delay: 2ms; */
 
 }
 
@@ -58,9 +84,9 @@
     left: 19%;
     top: 63%;
 
-    
-    animation: uptodown_second 1.3s ease-in;
-    animation-delay: 2ms;
+    animation: 1s slidein-left;
+    /* animation: uptodown_second 1.3s ease-in;
+    animation-delay: 2ms; */
 
 }
 
@@ -73,9 +99,9 @@
     font-size: 2rem;
     font-family: 'Dosis', sans-serif;
 
-    animation: uptodown_first 1s ease-in;
-    animation-delay: 1ms;
-
+    animation: 1s slidein-left;
+    /* animation: uptodown_first 1s ease-in;
+    animation-delay: 1ms; */
 }
 
 

@@ -1,40 +1,77 @@
 
 
+@keyframes slidein-left {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
 .sidepanel{
-    /* background-color: cadetblue; */
-    border-right: white 1px solid;
-    height: 18%;
-    width: 50px;
-    top: 82%;
+    background: rgb(21,37,63);
+    background: linear-gradient(180deg, rgba(21,37,63,1) 0%, rgba(8,23,46,1) 44%);
+    /* border-right: white 1px solid; */
+    height: 100%;
+    width: 22vh;
     position: absolute;
-    
-   
+    /* animation: 1.5s slidein-left; */
 }
 
 
-.scroll_name{
-    color: white;
-    transform: rotate(90deg);
-    position: absolute;
-    text-align: center;
-    top:-59%;
-    text-indent: -4px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-   
+
+
+
+
+.white_line{
+    position: relative;
+    width: .2rem;
+    height: 40%;
+    background-color: white;
+    top: 59%;
+    left:  47%;
+
 }
+
+
+
+
+
+
+
+
 
 .changediv{
     color: aliceblue;
     position: absolute;
-    top: 30%;
-    left: 2%;
+    top: 35%;
+    left: 5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.home_h2{
+    margin-bottom: 1.2rem;
+}
+
+.skill_h2{
+    margin-bottom: 1.2rem;
+}
+.works_h2{
+    margin-bottom: 1.2rem;
+}
+
+.about_h2{
+    margin-bottom: 1.2rem;
 }
 
 
 
 .home_h2:hover, .skill_h2:hover , .works_h2:hover  , .about_h2:hover{
     color: rgb(208, 66, 97);
+
     
 }
