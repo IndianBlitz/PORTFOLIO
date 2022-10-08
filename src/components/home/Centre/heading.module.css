@@ -1,0 +1,137 @@
+
+.name_centre{
+    color: white;
+    font-size: 6rem;
+    font-family: 'Dosis', sans-serif;
+    position: absolute;
+    
+    left: 14%;
+    top: 23%;
+   
+    animation: uptodown_last 1.5s ease-in;
+    animation-delay: 3ms;
+
+    
+   
+}
+
+/* @keyframes uptodown {
+    0% {
+        transform: skewX(0deg) translateY(-500px);
+        visibility:hidden;
+        color: transparent;
+    }
+    76%{
+        color: transparent;
+    }
+     
+    100% {
+        transform: skewX(0deg);
+        visibility:visible;
+       
+    }
+} */
+
+
+
+
+.line{
+    height: 4px;
+    width: 9rem;
+    background: rgb(208, 66, 97);
+    position: absolute;
+    border-radius: 5px;
+    left: 14.5%;
+    top: 60%;
+    animation: uptodown_second 1s ease-in;
+    animation-delay: 2ms;
+
+}
+
+
+.line2{
+    height: 4px;
+    width: 9rem;
+    background: rgb(208, 66, 97);
+    position: absolute;
+    border-radius: 5px;
+    left: 19%;
+    top: 63%;
+
+    
+    animation: uptodown_second 1.3s ease-in;
+    animation-delay: 2ms;
+
+}
+
+.mini_description{
+    position: absolute;
+    left: 14%;
+    top: 65%;
+    color: aliceblue;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-family: 'Dosis', sans-serif;
+
+    animation: uptodown_first 1s ease-in;
+    animation-delay: 1ms;
+
+}
+
+
+
+@keyframes uptodown_last {
+    0% {
+        transform: skewX(0deg) translateY(-500px);
+       
+        color: transparent;
+    }
+    76%{
+        color: transparent;
+    }
+     
+    100% {
+        transform: skewX(0deg);
+        visibility:visible;
+       
+    }
+}
+
+
+
+@keyframes uptodown_second {
+    0% {
+        transform: skewX(0deg) translateY(-500px);
+        visibility:hidden;
+        color: transparent;
+    }
+    76%{
+        color: transparent;
+    }
+     
+    100% {
+        transform: skewX(0deg);
+       
+       
+    }
+}
+
+
+
+
+@keyframes uptodown_first {
+    0% {
+        transform: skewX(0deg) ;
+        
+        color: transparent;
+    }
+    76%{
+        color: transparent;
+    }
+     
+    100% {
+        transform: skewX(0deg);
+        
+       
+    }
+}

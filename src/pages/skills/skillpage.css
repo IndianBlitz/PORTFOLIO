@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+  
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+
+.container::-webkit-scrollbar { width: 0 !important }
+
+
+.Skill_main{
+   
+    background: rgb(11, 23, 42);
+    /* background: linear-gradient(180deg, rgba(21,37,63,1) 0%, rgba(8,23,46,1) 44%); */
+   
+}
+
+
+.skill_heading{
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-size: 10rem;
+    color: black;
+}
+
+
+.skill_heading2{
+    position: relative;
+    top: 41%;
+    left: -14%;
+    font-size: 10rem;
+    color: white;
+   
+}
+
+.skill_heading3{
+    position:relative;
+    top: 57%;
+    left: -38%;
+    font-size: 10rem;
+    color: white;
+   
+}
+
+
+
+
+
+
+
+
+.Skill_programming_languages{
+
+    background: rgb(11, 23, 42);
+    
+}
+
+
+.Skill_pf_heading{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+.Skill_pf_javascript{
+    color: aliceblue;
+
+}
+
+.tester{
+    
+    position: relative;
+    top: 20%;
+    left:-15%;
+   
+}
+
+
+
+.tester_frame{
+    position: relative;
+    top: 20%;
+    left:0;
+}
+        
+.Skill_FrameWorks{
+    background: rgb(11, 23, 42);
+}
+.Skill_frame_heading{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Skill_extra{
+    background: rgb(11, 23, 42);
+}
+
+.Skill_extra_heading{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+
+
+
+.Skill_DSA{
+   
+    background-color: palegreen;
+}

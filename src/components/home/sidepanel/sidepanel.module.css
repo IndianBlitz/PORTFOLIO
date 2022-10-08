@@ -1,0 +1,40 @@
+
+
+.sidepanel{
+    /* background-color: cadetblue; */
+    border-right: white 1px solid;
+    height: 18%;
+    width: 50px;
+    top: 82%;
+    position: absolute;
+    
+   
+}
+
+
+.scroll_name{
+    color: white;
+    transform: rotate(90deg);
+    position: absolute;
+    text-align: center;
+    top:-59%;
+    text-indent: -4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+   
+}
+
+.changediv{
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.home_h2:hover, .skill_h2:hover , .works_h2:hover  , .about_h2:hover{
+    color: rgb(208, 66, 97);
+    
+}

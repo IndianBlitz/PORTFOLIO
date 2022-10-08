@@ -1,0 +1,24 @@
+
+.work_first{
+    width: 100%;
+    height: 100vh;
+    background-color: palegoldenrod;
+}
+
+.work_project1{
+    width: 100%;
+    height: 100vh;
+    background-color: palegreen;
+}
+
+.work_project2{
+    width: 100%;
+    height: 100vh;
+    background-color: plum;
+}
+
+.work_project3{
+    width: 100%;
+    height: 100vh;
+    background-color:powderblue;
+}
