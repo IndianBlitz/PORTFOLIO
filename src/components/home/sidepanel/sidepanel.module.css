@@ -73,5 +73,7 @@
 .home_h2:hover, .skill_h2:hover , .works_h2:hover  , .about_h2:hover{
     color: rgb(208, 66, 97);
 
+    cursor: pointer;
+
     
 }

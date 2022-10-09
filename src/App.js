@@ -7,14 +7,61 @@ import Aboutpage from './pages/about/aboutpage';
 import Navbar from './components/navbar/navbar';
 import ShowDiv from './components/home/ShowDiv/showdiv';
 
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Router,
+} from "react-router-dom";
+import HamburgerMenu from './components/Main/HamburgerMenu';
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:  <Homepage/>,
+  },
+  {
+    path:"/skill",
+    element:<Skillpage/>,
+  },
+  {
+    path:"/work",
+    element:<Workpage/>,
+  },
+  {
+    path:"/about",
+    element:<Aboutpage/>,
+  }
+
+]);
+
+
+
 
 
 function App() {
   return (
     <>
+
+
+<h1 className="main_name">siddharth mathur</h1>
    
+
+
+
+<RouterProvider router={router} />
+
+<HamburgerMenu/>
+
+
     {/* <Skillpage/> */}
-    <Homepage/>
+    
+    
+   
+    {/* <Homepage/> */}
       {/* <Navbar/> */}
       {/* <ShowDiv/> */}
     

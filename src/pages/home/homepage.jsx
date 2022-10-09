@@ -22,6 +22,7 @@ import { Canvas,} from "@react-three/fiber";
 import WorkNavButton from "../../components/home/Buttons/worksnavbutton";
 import AboutMeNavButton from "../../components/home/Buttons/aboutmenavbutton";
 
+
 // three js
 
 const Homepage = function () {
@@ -37,6 +38,8 @@ const Homepage = function () {
       return (
         <>
           <div className="homePage">
+
+           
             <Heading />
             <Sidepanel fetchval={getvalue} />
 
