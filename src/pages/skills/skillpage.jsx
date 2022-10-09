@@ -16,6 +16,11 @@ const Skillpage = function () {
   });
   
 
+  const [ref2, inView2] = useInView({
+    threshold:.2
+  });
+  
+
   return (
     <>
       <div className="container">
@@ -88,23 +93,88 @@ const Skillpage = function () {
         </section>
 
 
-        <section className="Skill_FrameWorks">
-                <h2 className="Skill_frame_heading" >Frameworks</h2>
 
-          <div className="tester_frame">
-            
-          {data2.map(function(currentElement,index){
-                  return <Skill
-                  key={data2[index].id}
-                  name=  {data2[index].name}
-                  percent = {data2[index].percent}
-                  background = {data2[index].backgroundcolor}
-                  />
-                  
-              })}
-            
+
+
+
+
+
+        <section className="Skill_FrameWorks" ref={ref2}>
+
+
+           {inView2 ? 
+           
+           <>
+                 <h2 className="Skill_frame_heading" >Frameworks</h2>
+
+      <div className="tester_frame">
+        
+      {data2.map(function(currentElement,index){
+              return <Skill
+              key={data2[index].id}
+              name=  {data2[index].name}
+              percent = {data2[index].percent}
+              background = {data2[index].backgroundcolor}
+              />
+              
+          })}
+                
 
         </div>
+           
+           </>
+           
+           
+           
+           
+           
+           
+           :
+           
+           
+           <>
+           <h2 className="Skill_frame_heading" >Frameworks</h2>
+
+<div className="tester_frame">
+  
+{data2.map(function(currentElement,index){
+        return <Skill
+        key={data2[index].id}
+        name=  {data2[index].name}
+        percent = {0}
+        background = {data2[index].backgroundcolor}
+        />
+        
+    })}
+          
+
+  </div>
+     
+     </>
+           
+           
+           
+           
+           }
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
 
 

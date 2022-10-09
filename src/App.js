@@ -13,8 +13,8 @@ function App() {
   return (
     <>
    
-    <Skillpage/>
-    {/* <Homepage/> */}
+    {/* <Skillpage/> */}
+    <Homepage/>
       {/* <Navbar/> */}
       {/* <ShowDiv/> */}
     
