@@ -1,0 +1,28 @@
+
+
+.btn{
+
+    position: absolute;
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 0px  orange;
+    width: 20%;
+    height: 3rem;
+    top: 78%;
+    left: 17%;
+    font-size: 2rem;
+    animation: 1s slidein-left;
+
+}
+
+@keyframes slidein-left {
+    0% {
+        
+        transform: translateX(-120%);
+    }
+   
+    100% {
+     
+        transform: translateX(0);
+    }
+}
