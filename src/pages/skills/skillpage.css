@@ -81,7 +81,7 @@ section{
     color: white;
     font-size: 3rem;
     position: relative;
-    top: 5%;
+    top: 10%;
     left: 10%;
 }
 
@@ -90,10 +90,10 @@ section{
 
 }
 
-.tester{
+.Skill_pf_progress{
     
     position: relative;
-    top: 20%;
+    top: 30%;
     left:-15%;
    
 }

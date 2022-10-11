@@ -7,7 +7,8 @@ import style from "./skillnavbutton.module.css"
 const SkillNavButton =function(){
     return(
         <>
-        <button className={style.btn}> Explore Skills</button>
+        
+        <a href='/skill' className={style.btn}> Explore Skills</a>
         </>
     )
 }

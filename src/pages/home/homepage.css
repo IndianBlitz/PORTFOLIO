@@ -67,7 +67,7 @@
     position: absolute;
     top: 42%;
     left: 72%;
-    animation: 3s slide-right;
+    animation: 2s slide-right;
     z-index: 2;
 }
 
@@ -76,7 +76,7 @@
     position: absolute;
     top: 74%;
     left: 65%;
-    animation: 3s slide-right;
+    animation: 2s slide-right;
     z-index: 3;
 }
 
@@ -86,7 +86,7 @@
     position: absolute;
     top: 65%;
     left: 40%;
-    animation: 2s slide-right;
+    animation: 1s slide-right;
     z-index: 2;
 }
 

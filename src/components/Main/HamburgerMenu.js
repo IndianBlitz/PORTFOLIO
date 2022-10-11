@@ -129,18 +129,18 @@ function HamburgerMenu() {
 
         <List>
           <li>
-          <a href="/" onClick={handleClick}> Home</a>
+          <a href="/" onClick={handleClick} >  <h1 className={style.names}>Home</h1> </a>
            
           </li>
 
           <li>
-          <a href="/skill" onClick={handleClick}> Skill</a>
+          <a href="/skill" onClick={handleClick}> <h1 className={style.names}>Skill</h1></a>
            
           </li>
 
 
           <li>
-          <a href="/work" onClick={handleClick}>Work</a>
+          <a href="/work" onClick={handleClick}><h1 className={style.names}>Work</h1></a>
            
           </li>
 
@@ -148,7 +148,7 @@ function HamburgerMenu() {
 
 
           <li>
-          <a href="/about" onClick={handleClick}>About me</a>
+          <a href="/about" onClick={handleClick}><h1 className={style.names}>About Me</h1></a>
            
           </li>
 

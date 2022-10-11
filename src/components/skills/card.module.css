@@ -1,0 +1,6 @@
+.card{
+    display: flex;
+    background-color: aqua;
+    width: 30vh;
+    height: 20%;
+}

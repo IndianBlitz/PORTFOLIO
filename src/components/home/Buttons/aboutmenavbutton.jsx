@@ -7,7 +7,7 @@ import style from "./aboutmenavbutton.module.css"
 const AboutMeNavButton =function(){
     return(
         <>
-        <button className={style.btn}>About Me</button>
+       <a href='/about' className={style.btn}> About Me</a>
         </>
     )
 }

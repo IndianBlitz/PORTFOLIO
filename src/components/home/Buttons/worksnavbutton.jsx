@@ -7,7 +7,7 @@ import style from "./worksnavbutton.module.css"
 const WorkNavButton =function(){
     return(
         <>
-        <button className={style.btn}> Explore Works</button>
+      <a href='/work' className={style.btn}> Explore Works</a>
         </>
     )
 }

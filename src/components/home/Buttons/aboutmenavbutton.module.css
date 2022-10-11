@@ -5,15 +5,22 @@
     position: absolute;
     background-color: white;
     color: black;
-    box-shadow: 10px 10px 0px  orange;
+    box-shadow: 10px 10px 0px  rgb(208, 66, 97);
     width: 20%;
-    height: 3rem;
+    height: 4rem;
     top: 78%;
     left: 17%;
     font-size: 2rem;
     animation: 1s slidein-left;
-
+    text-decoration: none;
 }
+
+
+.btn:hover{
+    text-decoration: none;
+    color: black;
+}
+
 
 @keyframes slidein-left {
     0% {

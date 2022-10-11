@@ -1,17 +1,17 @@
 a{
 
     display: inline-block;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 300;
     text-decoration: none;
     color: "#B6EDC8";
     padding: 1rem 2rem;
-
+  
     background-image: linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
-    #fff 50%
+    
   );
 
   background-size: 240%;
@@ -22,9 +22,24 @@ a{
 
 a:hover, a:active{
     background-position: 100%;
-    color: #115b4c;
+    color: rgb(10, 18, 118);
     transform: translateX(1rem);
+    text-decoration:underline ;
+  
 }
 
+
+
+
+
+
+
+
+
+
+
+.names{
+  color: aliceblue;
+}
 
   
