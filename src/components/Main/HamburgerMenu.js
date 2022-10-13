@@ -13,7 +13,7 @@ const MenuLabel = styled.label`
   background-color: ${COLORS.nocolor};
 
   position: fixed;
-  top: 1rem;
+  top: 0rem;
   right: 3rem;
   
   height: 4rem;

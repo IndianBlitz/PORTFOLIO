@@ -15,6 +15,11 @@ import {
   Router,
 } from "react-router-dom";
 import HamburgerMenu from './components/Main/HamburgerMenu';
+import Card from './components/skills/card';
+
+
+
+import linkedin from "/home/blitz/Desktop/Portfoilo/portfolio/src/images/linkedin_log.ico";
 
 
 
@@ -50,11 +55,16 @@ function App() {
 <h1 className="main_name">siddharth mathur</h1>
    
 
-
+<a href='https://www.linkedin.com/in/siddharth-mathur01/' target="blank" className='linkedinImg'>
+    <img src={linkedin} alt="linkedin_img" className='img'/>
+</a>
 
 <RouterProvider router={router} />
 
 <HamburgerMenu/>
+
+
+
 
 
     {/* <Skillpage/> */}

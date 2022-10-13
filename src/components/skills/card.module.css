@@ -1,6 +1,56 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+
+} */
+
+
+
 .card{
+    
+    position: absolute;
+    
+    width: 70%;
+    height: 10%;
+    margin: 1px;
+    box-shadow:  20px 20px 50px rgba(0, 0, 0, 0.5);
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    
     display: flex;
-    background-color: aqua;
-    width: 30vh;
-    height: 20%;
+    justify-content: left;
+   
+    align-items: flex-start;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+    backdrop-filter:blur(5px);
+
+padding-left: 1rem;
+padding-bottom: 30px;
+    
+    
 }
+
+.content{
+    display: flex;
+
+   
+}
+
+
+
+/* .card:before {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  } */

@@ -12,7 +12,7 @@ function k(v) {
 
 const Skillpage = function () {
   const [ref1, inView1] = useInView({
-    threshold: 0.2,
+    threshold: 0.4,
   });
 
   const [ref2, inView2] = useInView({

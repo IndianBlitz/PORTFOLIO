@@ -7,7 +7,7 @@
 .main_name{
   z-index: 3;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   color: white;
   font-size: 1.4rem;
   top: 3%;
@@ -15,10 +15,20 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-.navb{
+/* .navb{
   z-index: 5;
-}
+} */
 
+
+.linkedinImg{
+  position: fixed;
+  z-index:5;
+  left: 84%;
+  top: -5%;
+}
+.img{
+  width: 70%;
+}
 
 
 
