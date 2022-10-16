@@ -16,6 +16,6 @@
 .appear{
     background-color: brown;
     /* overflow:hidden; */
-    animation: 2s slideup;
+    animation: 10s slideup;
    
 }
