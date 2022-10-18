@@ -6,9 +6,9 @@ import data2 from "./Frameworks.js";
 import data3 from "./Extra.js";
 import { useInView } from "react-intersection-observer";
 
-function k(v) {
-  console.log();
-}
+// function k(v) {
+//   console.log();
+// }
 
 const Skillpage = function () {
   const [ref1, inView1] = useInView({

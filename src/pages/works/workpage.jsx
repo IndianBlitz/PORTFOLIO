@@ -1,35 +1,51 @@
+import { useInView } from "react-intersection-observer";
 
+import "./workpage.css";
 
+const Workpage = function () {
+  const [section1Ref, section1View] = useInView({
+    threshold: 0.4,
+  });
 
-import "./workpage.css"
+  const [section2Ref, section2View] = useInView({
+    threshold: 0.4,
+  });
 
-const Workpage = function(){
-    return(
-        <>
-    
+  const [section3Ref, section3View] = useInView({
+    threshold: 0.4,
+  });
 
-    <div className="work_first">
+  const [section4Ref, section4View] = useInView({
+    threshold: 0.4,
+  });
 
-    </div>
+  return (
+    <>
+      {section1View ? (
+        <section className="work_first" ref={section1Ref}></section>
+      ) : (
+        <section className="work_first"></section>
+      )}
 
-    <div className="work_project1">
+      {section2View ? (
+        <section className="work_project1" ref={section2Ref}></section>
+      ) : (
+        <section className="work_project1"></section>
+      )}
 
-    </div>
+      {section3View ? (
+        <section className="work_project2" ref={section3Ref}></section>
+      ) : (
+        <section className="work_project2"></section>
+      )}
 
-
-    <div className="work_project2">  {/* extra -> os and softwares */}
-
-    </div>
-
-    <div className="work_project3">
-        
-    </div>
-
-    
-
+      {section4View ? (
+        <section className="work_project3" ref={section4Ref}></section>
+      ) : (
+        <section className="work_project3"></section>
+      )}
     </>
+  );
+};
 
-    );
-}
-
-export default Workpage ;
+export default Workpage;
