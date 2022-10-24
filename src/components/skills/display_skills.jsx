@@ -1,6 +1,7 @@
 import style from "./display_skill.module.css";
 
 import ProgressBar from "@ramonak/react-progress-bar";
+import Card from "./card";
 
 const progress = (percent,bgcolor) => {
   return <ProgressBar 
@@ -8,24 +9,34 @@ const progress = (percent,bgcolor) => {
   bgColor={bgcolor }
   height={"1.5rem"}
   width = {"75rem"}
-
+  maxCompleted={100}
+  // maxCompleted={true}
   // isLabelVisible={false}
   labelColor={"green"}
   labelSize={"1rem"}
-  // animateOnRender={true}
+  transitionDuration={"1.3s"}
   borderRadius={"0px"}
-  baseBgColor={"transparent"}
+  baseBgColor={"green"}
   />;
 };
 
 const Skill = function (props) {
   return (
     <>
-      <div className={style.main}>
-        <h1 className={style.name}>{props.name}</h1>
+   
+      <Card>
+        <div className={style.name_div}>
+
+          <h1 className={style.name}>{props.name}</h1>
+
+
+        </div>
+       
         {progress(props.percent,props.background)}
+
         {/* <h1>{props.percent}</h1> */}
-      </div>
+      </Card>
+   
     </>
   );
 };

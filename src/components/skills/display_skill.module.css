@@ -1,19 +1,16 @@
 
 
-
+.name_div{
+    width: 14rem;
+    height:auto;
+    
+}
 
 .name{
     color: white;
-    position: relative;
-    margin-right: 3rem;
+    
 }
 
-.main{
-    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
 
 
 

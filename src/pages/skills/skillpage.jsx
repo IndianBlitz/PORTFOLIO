@@ -12,11 +12,11 @@ import { useInView } from "react-intersection-observer";
 
 const Skillpage = function () {
   const [ref1, inView1] = useInView({
-    threshold: 0.4,
+    threshold: 1,
   });
 
   const [ref2, inView2] = useInView({
-    threshold: 0.2,
+    threshold: 1,
   });
 
   return (
@@ -40,6 +40,7 @@ const Skillpage = function () {
               <div className="Skill_pf_progress">
                 {data.map(function (currentElement, index) {
                   return (
+                    
                     <Skill
                       key={data[index].id}
                       name={data[index].name}
@@ -55,7 +56,7 @@ const Skillpage = function () {
             <>
               <h2 className="Skill_pf_heading">Programming languages</h2>
 
-              <div className="tester">
+              <div className="Skill_pf_progress">
                 {data.map(function (currentElement, index) {
                   return (
                     <Skill

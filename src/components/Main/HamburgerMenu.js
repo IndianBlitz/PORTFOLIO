@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 import style from "./hamburgermenu.module.css"
 
 const COLORS = {
   primaryDark: "#115b4c",
   primaryLight:"#B6EDC8" ,
+  
+  color1:"#000000",
+  color2:"#2C3E50",
+
   nocolor:"transparent"
 };
 
@@ -33,8 +37,8 @@ const NavBackground = styled.div`
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(
-    ${COLORS.primaryDark},
-    ${COLORS.primaryLight}
+    ${COLORS.color1},
+    ${COLORS.color2}
   );
   height: 6rem;
   width: 6rem;

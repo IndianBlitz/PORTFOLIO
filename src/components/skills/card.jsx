@@ -1,23 +1,14 @@
-import style from "./card.module.css"
+import style from "./card.module.css";
 
+const Card = function ({ children }) {
+  return (
+    <>
+      <div className={style.card}>
+        <div className={style.content}>{children}</div>
+      </div>
 
-
-const Card =function (props){
-    return(
-        <div className={style.card}>
-
-            <div className={style.content}>
-                    <h1>js</h1>
-
-                    {props.children}
-                 
-            </div>
-           
-            
-        </div>
-    );
-}
-
-
+    </>
+  );
+};
 
 export default Card;
