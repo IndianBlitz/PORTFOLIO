@@ -21,7 +21,7 @@ import { Canvas } from "@react-three/fiber";
 import WorkNavButton from "../../components/home/Buttons/worksnavbutton";
 import AboutMeNavButton from "../../components/home/Buttons/aboutmenavbutton";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
+
 
 // three js
 
@@ -72,26 +72,28 @@ const Homepage = function () {
         <section ref={skillRef}>
           {skillView ? (
             <div className="homePage_skills">
-            
               <div className="model_div">
-              <Canvas className="boxInner">
+                <Canvas className="boxInner">
                   <pointLight position={[5, 5, 5]} />
                   <Boxed />
                 </Canvas>
-                <div className="boxOuter"> 
-                
-                </div> 
-               
-               
-  
+                <div className="boxOuter"></div>
               </div>
 
-              <h1 className="homePage_skills_heading">
-                SKI<br></br>LLS
-              </h1>
+
+              <div class="animated-title">
+                <div class="text-top">
+                  <div>
+                    
+                    <span>SKI</span>
+                  </div>
+                </div>
+                <div class="text-bottom">
+                  <div>LLS</div>
+                </div>
+              </div>
 
 
-              
               <SkillNavButton />
 
               <Sidepanel />
@@ -105,7 +107,6 @@ const Homepage = function () {
           {workView ? (
             <div className="homePage_Works">
               <div className="model">
-              
                 <Canvas>
                   <pointLight position={[5, 5, 5]} />
                   <Boxed />
