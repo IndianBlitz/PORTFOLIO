@@ -14,7 +14,6 @@ import darkcloud3 from "/home/blitz/Desktop/Portfoilo/portfolio/src/images/cloud
 import "./homepage.css";
 import Sidepanel from "../../components/home/sidepanel/sidepanel";
 
-
 import SkillNavButton from "../../components/home/Buttons/skillnavbutton";
 import Boxed from "../../3dmodels/box";
 
@@ -22,11 +21,11 @@ import { Canvas } from "@react-three/fiber";
 import WorkNavButton from "../../components/home/Buttons/worksnavbutton";
 import AboutMeNavButton from "../../components/home/Buttons/aboutmenavbutton";
 import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 // three js
 
 const Homepage = function () {
-
   const [homeRef, homeView] = useInView({
     threshold: 1,
   });
@@ -43,24 +42,15 @@ const Homepage = function () {
     threshold: 1,
   });
 
-
-
- 
-
   return (
     <>
-     
-
-
-
-
       <div className="homePage_container">
         <section ref={homeRef}>
           {homeView ? (
             <div className="homePage">
               <Heading />
               <Sidepanel />
-          
+
               <h1 className="portfolio_heading">PORTFOLIO</h1>
 
               <img src={moonlight} alt="error" className="moonlight_img" />
@@ -82,16 +72,26 @@ const Homepage = function () {
         <section ref={skillRef}>
           {skillView ? (
             <div className="homePage_skills">
-              <div className="model">
-                <Canvas>
+            
+              <div className="model_div">
+              <Canvas className="boxInner">
                   <pointLight position={[5, 5, 5]} />
                   <Boxed />
                 </Canvas>
+                <div className="boxOuter"> 
+                
+                </div> 
+               
+               
+  
               </div>
 
               <h1 className="homePage_skills_heading">
                 SKI<br></br>LLS
               </h1>
+
+
+              
               <SkillNavButton />
 
               <Sidepanel />
@@ -105,6 +105,7 @@ const Homepage = function () {
           {workView ? (
             <div className="homePage_Works">
               <div className="model">
+              
                 <Canvas>
                   <pointLight position={[5, 5, 5]} />
                   <Boxed />
@@ -114,7 +115,7 @@ const Homepage = function () {
               <h1 className="homePage_works_heading">WORKS</h1>
               <WorkNavButton />
 
-              <Sidepanel  />
+              <Sidepanel />
             </div>
           ) : (
             <div></div>

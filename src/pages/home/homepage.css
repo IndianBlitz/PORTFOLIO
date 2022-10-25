@@ -321,3 +321,70 @@ section {
     width: 30vh;
     height: 20vh;
 }
+
+
+
+
+
+
+
+
+.model_div{
+    position: absolute;
+    top: 30%;
+    width: 35%;
+    height: 50vh;
+    left: 55%;
+    border: 4px  solid brown;
+}
+
+
+
+.boxOuter{
+  position: relative;
+  height:100%;
+  top: -100%;
+  background-color: antiquewhite;
+
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  visibility: hidden;
+  animation-duration: 1s;
+}
+
+@keyframes move {
+    0% {
+   
+      width: 100%;
+      visibility: visible;
+    }
+
+   
+    100% {
+     width: 0%;
+     visibility: visible;
+     
+    }
+  }
+
+.boxInner{
+    position: relative;
+    height:100%;
+    width: 100%;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
