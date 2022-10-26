@@ -6,10 +6,6 @@ import data2 from "./Frameworks.js";
 import data3 from "./Extra.js";
 import { useInView } from "react-intersection-observer";
 
-// function k(v) {
-//   console.log();
-// }
-
 const Skillpage = function () {
   const [ref1, inView1] = useInView({
     threshold: 1,
@@ -28,9 +24,6 @@ const Skillpage = function () {
           <h1 className="skill_heading3">SKILLS</h1>
         </section>
 
-
-
-
         <section className="Skill_programming_languages" ref={ref1}>
           {/* {k(ref1)} */}
           {inView1 ? (
@@ -40,7 +33,6 @@ const Skillpage = function () {
               <div className="Skill_pf_progress">
                 {data.map(function (currentElement, index) {
                   return (
-                    
                     <Skill
                       key={data[index].id}
                       name={data[index].name}
@@ -49,7 +41,6 @@ const Skillpage = function () {
                     />
                   );
                 })}
-
               </div>
             </>
           ) : (
@@ -66,9 +57,7 @@ const Skillpage = function () {
                       background={data[index].backgroundcolor}
                     />
                   );
-
                 })}
-               
               </div>
             </>
           )}
@@ -79,7 +68,7 @@ const Skillpage = function () {
             <>
               <h2 className="Skill_frame_heading">Frameworks</h2>
 
-              <div className="tester_frame">
+              <div className="frame">
                 {data2.map(function (currentElement, index) {
                   return (
                     <Skill
@@ -96,7 +85,7 @@ const Skillpage = function () {
             <>
               <h2 className="Skill_frame_heading">Frameworks</h2>
 
-              <div className="tester_frame">
+              <div className="frame">
                 {data2.map(function (currentElement, index) {
                   return (
                     <Skill
@@ -114,7 +103,7 @@ const Skillpage = function () {
 
         <section className="Skill_extra">
           <h2 className="Skill_extra_heading">Extra</h2>
-          <div className="tester_frame">
+          <div className="frame">
             {data3.map(function (currentElement, index) {
               return (
                 <Skill

@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+
+/* Main Container */
 .homePage_container {
     width: 100%;
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    scroll-snap-type: y mandatory;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; 
+     overflow-y: hidden;
+   
+
+    scroll-behavior: smooth; 
     overflow-x: hidden;
     background: rgb(21, 37, 63);
     background: linear-gradient(180deg, rgba(21, 37, 63, 1) 0%, rgba(8, 23, 46, 1) 44%);
@@ -15,14 +22,16 @@
 
 
 
-
+/* All section Tag properties */
 section {
-    scroll-snap-align: start;
     width: 100%;
     height: 100vh;
     display: flex;
+    scroll-snap-align: start;
+    
 }
 
+/* HomePage Main section properties */
 .homePage {
     width: 100%;
     height: 100vh;
@@ -38,15 +47,11 @@ section {
 
 }
 
-
-
 .moonlight_img {
     position: relative;
     left: 32%;
     top: -15%;
     /* z-index: 1; */
-
-
 }
 
 .moon_img {
@@ -55,8 +60,6 @@ section {
     top: 32%;
     right: 18%;
     animation: 1s slide-right;
-
-
 }
 
 .lightcloud1_img {
@@ -72,7 +75,6 @@ section {
     left: 40%;
     animation: 1s slide-right;
 }
-
 
 /* top right */
 .darkcloud1_img {
@@ -92,7 +94,6 @@ section {
     z-index: 3;
 }
 
-
 /* bottom left */
 .darkcloud3_img {
     position: absolute;
@@ -102,9 +103,6 @@ section {
     z-index: 2;
 }
 
-
-
-
 .portfolio_heading {
     color: rgb(208, 66, 97);
     position: absolute;
@@ -112,7 +110,7 @@ section {
     font-size: 4rem;
     left: 49%;
     font-weight: 900;
-    z-index: 10;
+    z-index: 3;
     /* text-shadow: 3px 10px white; */
 
 }
@@ -141,23 +139,144 @@ section {
 
 
 
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-@keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
- 
-  100% { transform: translate3d(0, 0, 0); }
+/* HomePage Skills section properties */
+.homePage_skills {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    margin: 0px;
+    padding: 0px;
+    /* z-index: 3; */
+    position: absolute;
+    /* background: rgb(21,37,63);
+    background: linear-gradient(180deg, rgba(21,37,63,1) 0%, rgba(8,23,46,1) 44%); */
+    background-color: transparent;
 }
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0);   }
+
+.homePage_skills_heading {
+    font-size: 13rem;
+    color: white;
+    position: absolute;
+    top: 19%;
+    left: 17%;
+    animation: 1.4s slidein-left ease-in-out;
+
+
 }
+
+.model {
+    position: absolute;
+    width: 45%;
+    height: 100vh;
+    left: 55%;
+    animation: 1.4s slidein-right ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HomePage Works section properties */
+.homePage_Works {
+    width: 100%;
+    height: 100vh;
+    background: rgb(21, 37, 63);
+    background: linear-gradient(180deg, rgba(21, 37, 63, 1) 0%, rgba(8, 23, 46, 1) 44%);
+    margin: 0px;
+    padding: 0px;
+    /* z-index: 2; */
+    position: absolute;
+}
+
+.homePage_works_heading {
+    font-size: 10rem;
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 14%;
+    animation: 1.4s slidein-left ease-in-out;
+}
+
+
+
+
+
+/* HomePage About Me section properties */
+.homePage_About {
+    width: 100%;
+    height: 100vh;
+    background: rgb(21, 37, 63);
+    background: linear-gradient(180deg, rgba(21, 37, 63, 1) 0%, rgba(8, 23, 46, 1) 44%);
+    margin: 0px;
+    padding: 0px;
+    /* z-index: 1; */
+    position: absolute;
+
+}
+
+.homePage_about_heading {
+    font-size: 10rem;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    animation: 1.4s slidein-left ease-in-out;
+}
+
+
+
+
+/* Extra things code */
+
+
+.test{
+    position: absolute;
+    width: 30vh;
+    height: 20vh;
+}
+
+
+
+
+
+
+.Main_homePage{
+    width: 100%;
+    height: 100vh;
+/*   
+    background-color: aqua; */
+    position: relative;
+}
+
+
+
+.show_div{
+    
+    width: 100%;
+    /* background-color: #be7911; */
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    animation-name: downToTop;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+   visibility: hidden;
+    animation-duration: 1s;
+    
+}
+
+
+
+
 .animated-title {
     border: 2px yellow solid;
   color: rgb(172, 41, 41);
@@ -211,59 +330,43 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.homePage_skills {
-    width: 100%;
-    height: 100vh;
-    background-color: yellow;
-    margin: 0px;
-    padding: 0px;
-    /* z-index: 3; */
+.model_div{
     position: absolute;
-    /* background: rgb(21,37,63);
-    background: linear-gradient(180deg, rgba(21,37,63,1) 0%, rgba(8,23,46,1) 44%); */
-    background-color: transparent;
-}
-
-.homePage_skills_heading {
-    font-size: 13rem;
-    color: white;
-    position: absolute;
-    top: 19%;
-    left: 17%;
-    animation: 1.4s slidein-left ease-in-out;
-
-
-}
-
-.model {
-    position: absolute;
-    width: 45%;
-    height: 100vh;
+    top: 30%;
+    width: 35%;
+    height: 50vh;
     left: 55%;
-    animation: 1.4s slidein-right ease-in-out;
+    border: 4px  solid brown;
 }
 
 
 
+.boxOuter{
+  position: relative;
+  height:100%;
+  top: -100%;
+  background-color: antiquewhite;
+
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  visibility: hidden;
+  animation-duration: 1s;
+}
+
+
+
+.boxInner{
+    position: relative;
+    height:100%;
+    width: 100%;
+} 
 
 
 
 
-
-
-
-
+/* Keyframes */
 @keyframes slidein-left {
     0% {
 
@@ -291,128 +394,6 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.homePage_Works {
-    width: 100%;
-    height: 100vh;
-    background: rgb(21, 37, 63);
-    background: linear-gradient(180deg, rgba(21, 37, 63, 1) 0%, rgba(8, 23, 46, 1) 44%);
-    margin: 0px;
-    padding: 0px;
-    /* z-index: 2; */
-    position: absolute;
-
-}
-
-
-.homePage_works_heading {
-    font-size: 10rem;
-    color: white;
-    position: absolute;
-    top: 27%;
-    left: 14%;
-    animation: 1.4s slidein-left ease-in-out;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.homePage_About {
-    width: 100%;
-    height: 100vh;
-    background: rgb(21, 37, 63);
-    background: linear-gradient(180deg, rgba(21, 37, 63, 1) 0%, rgba(8, 23, 46, 1) 44%);
-    margin: 0px;
-    padding: 0px;
-    /* z-index: 1; */
-    position: absolute;
-
-}
-
-.homePage_about_heading {
-    font-size: 10rem;
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 17%;
-    animation: 1.4s slidein-left ease-in-out;
-}
-
-.test{
-    position: absolute;
-    width: 30vh;
-    height: 20vh;
-}
-
-
-
-
-
-
-
-
-.model_div{
-    position: absolute;
-    top: 30%;
-    width: 35%;
-    height: 50vh;
-    left: 55%;
-    border: 4px  solid brown;
-}
-
-
-
-.boxOuter{
-  position: relative;
-  height:100%;
-  top: -100%;
-  background-color: antiquewhite;
-
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
-  visibility: hidden;
-  animation-duration: 1s;
-}
-
 @keyframes move {
     0% {
    
@@ -428,21 +409,38 @@ section {
     }
   }
 
-.boxInner{
-    position: relative;
-    height:100%;
-    width: 100%;
-} 
+  @keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+   
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  @keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); }
+    100% { transform: translate3d(0, 0, 0);   }
+  }
+
+  @keyframes downToTop {
+    0% {
+   
+      height: 100%;
+      z-index: 5;
+      visibility: visible;
+    }
+
+   
+    100% {
+     height: 0%;
+     z-index: 5;
+     
+     visibility: visible;
+     
+    }
+  }
 
 
 
 
-
-
-
-
-
-
+  /* Tester area */
 
 
 

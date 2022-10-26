@@ -21,11 +21,20 @@ import { Canvas } from "@react-three/fiber";
 import WorkNavButton from "../../components/home/Buttons/worksnavbutton";
 import AboutMeNavButton from "../../components/home/Buttons/aboutmenavbutton";
 import { useInView } from "react-intersection-observer";
-
+import { useEffect, useState } from "react";
 
 // three js
 
 const Homepage = function () {
+  const [startSlideUp, setstartSlideUp] = useState(false);
+
+  useEffect(function () {
+    setstartSlideUp(true);
+    setTimeout(() => {
+      setstartSlideUp(false);
+    }, 1000);
+  }, []);
+
   const [homeRef, homeView] = useInView({
     threshold: 1,
   });
@@ -47,22 +56,25 @@ const Homepage = function () {
       <div className="homePage_container">
         <section ref={homeRef}>
           {homeView ? (
-            <div className="homePage">
-              <Heading />
-              <Sidepanel />
+            <div className="Main_homePage">
+              <div className={`${startSlideUp ? "show_div" : ""}`}></div>
+              <div className="homePage">
+                <Heading />
+                <Sidepanel />
 
-              <h1 className="portfolio_heading">PORTFOLIO</h1>
-
-              <img src={moonlight} alt="error" className="moonlight_img" />
-              <img src={moon} alt="error" className="moon_img" />
-
-              <img src={darkcloud} alt="error" className="darkcloud1_img" />
-
-              <img src={lightcloud} alt="error" className="lightcloud1_img" />
-              <img src={lightcloud2} alt="error" className="lightcloud2_img" />
-
-              <img src={darkcloud2} alt="error" className="darkcloud2_img" />
-              <img src={darkcloud3} alt="error" className="darkcloud3_img" />
+                <h1 className="portfolio_heading">PORTFOLIO</h1>
+                <img src={moonlight} alt="error" className="moonlight_img" />
+                <img src={moon} alt="error" className="moon_img" />
+                <img src={darkcloud} alt="error" className="darkcloud1_img" />
+                <img src={lightcloud} alt="error" className="lightcloud1_img" />
+                <img
+                  src={lightcloud2}
+                  alt="error"
+                  className="lightcloud2_img"
+                />
+                <img src={darkcloud2} alt="error" className="darkcloud2_img" />
+                <img src={darkcloud3} alt="error" className="darkcloud3_img" />
+              </div>
             </div>
           ) : (
             <div></div>
@@ -80,11 +92,9 @@ const Homepage = function () {
                 <div className="boxOuter"></div>
               </div>
 
-
               <div class="animated-title">
                 <div class="text-top">
                   <div>
-                    
                     <span>SKI</span>
                   </div>
                 </div>
@@ -92,7 +102,6 @@ const Homepage = function () {
                   <div>LLS</div>
                 </div>
               </div>
-
 
               <SkillNavButton />
 
@@ -126,15 +135,25 @@ const Homepage = function () {
         <section ref={aboutRef}>
           {aboutView ? (
             <div className="homePage_About">
-              <div className="model">
-                <Canvas>
+              <div className="model_div">
+                <Canvas className="boxInner">
                   <pointLight position={[5, 5, 5]} />
                   <Boxed />
                 </Canvas>
+                <div className="boxOuter"></div>
               </div>
-              <h1 className="homePage_about_heading">
-                ABOUT<br></br>ME
-              </h1>
+
+              <div class="animated-title" style={{ width: "56vmin" }}>
+                <div class="text-top">
+                  <div>
+                    <span style={{ color: "grey" }}>ABOUT</span>
+                  </div>
+                </div>
+                <div class="text-bottom">
+                  <div>ME</div>
+                </div>
+              </div>
+
               <AboutMeNavButton />
               <Sidepanel />
             </div>
