@@ -5,6 +5,11 @@ import data from "./programmingLanguageData.js";
 import data2 from "./Frameworks.js";
 import data3 from "./Extra.js";
 import { useInView } from "react-intersection-observer";
+import { myName } from "../../utils/commonDetails";
+
+
+// document.title=`Skills | ${myName}`;
+
 
 const Skillpage = function () {
   const [ref1, inView1] = useInView({

@@ -1,10 +1,41 @@
 
-
+/* About Me section 1 */
 .about_first{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: #0C2340; */
+    position: relative;
+    background-color:#020c19;
 }
+
+.about_first_left{
+    width: 50%;
+   
+    background-color: rgb(18, 67, 110);
+}
+
+.about_first_right{
+    width: 50%;
+    float: right;
+    background-color: rgb(192, 36, 223);
+}
+
+
+.about_first_heading{
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 200px;
+    
+}
+
+
+
+
+
+
+
+
 
 .about_second{
     width: 100%;

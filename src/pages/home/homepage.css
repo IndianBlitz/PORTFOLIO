@@ -134,11 +134,6 @@ section {
 
 
 
-
-
-
-
-
 /* HomePage Skills section properties */
 .homePage_skills {
     width: 100%;
@@ -423,14 +418,14 @@ background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, F
     0% {
    
       height: 100%;
-      z-index: 5;
+      z-index: 1200;
       visibility: visible;
     }
 
    
     100% {
      height: 0%;
-     z-index: 5;
+     z-index: 1200;
      
      visibility: visible;
      

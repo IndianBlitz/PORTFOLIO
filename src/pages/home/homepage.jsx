@@ -28,11 +28,15 @@ import { useEffect, useState } from "react";
 const Homepage = function () {
   const [startSlideUp, setstartSlideUp] = useState(false);
 
+  
+ 
+  
   useEffect(function () {
     setstartSlideUp(true);
     setTimeout(() => {
       setstartSlideUp(false);
     }, 1000);
+
   }, []);
 
   const [homeRef, homeView] = useInView({

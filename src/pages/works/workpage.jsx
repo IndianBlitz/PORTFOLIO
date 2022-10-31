@@ -1,6 +1,12 @@
+
 import { useInView } from "react-intersection-observer";
+import { myName } from "../../utils/commonDetails";
 
 import "./workpage.css";
+
+// document.title=`Work | ${myName}`;
+
+
 
 const Workpage = function () {
   const [section1Ref, section1View] = useInView({
